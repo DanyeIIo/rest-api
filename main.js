@@ -7,7 +7,7 @@ mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true, useUn
 const app = express();
 app.use(express.json());
 app.use(cors());
-const port = 3000;
+const port = process.env.PORT;
 const User = mongoose.model('users', {name : String, age: Number});
 
 (async () => {
