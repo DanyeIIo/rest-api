@@ -16,6 +16,10 @@ const User = mongoose.model('users', {name : String, age: Number});
         res.status(200).send(user);
     })
 
+    app.get('/test',async (req,res) => {
+        res.status(200).send({msg: "FUCK UR SELF"});
+    })
+
     app.put('/users/:_id',async (req,res) => {
         const user = await User.findById(req.params._id);
         console.log(req.body.name);
