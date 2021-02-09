@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require('cors')
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://Danyello:D22@08N03i@mydb.uxyjh.mongodb.net/test', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://Danyello:Qwerty12345@mydb.uxyjh.mongodb.net/test', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const app = express();
 app.use(express.json());
